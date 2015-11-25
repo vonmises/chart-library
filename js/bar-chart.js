@@ -39,9 +39,9 @@ function BarChart(context) {
     // Determine the largest value in the bar array
     var largestValue = 0;
     for (i = 0; i < arr.length; i += 1) {
-    if (arr[i] > largestValue) {
-      largestValue = arr[i];
-    }
+      if (arr[i] > largestValue) {
+        largestValue = arr[i];
+      }
     }
     
     // For each bar
