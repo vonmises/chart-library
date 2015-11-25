@@ -20,10 +20,10 @@ function createPieChart(canvas, context, data){
   }
 
   previous_position = 0;
-  var index = 0;
 
+  // numerical index for data[] and colours[], string i for pie_data[]
+  var index = 0;
   for (var i in data){
-    index = keys.indexOf(i)
     next_position = previous_position + (Math.PI * 2 * (data[index] / total));
     context.beginPath();
     context.moveTo(center[0], center[1]);
@@ -36,6 +36,7 @@ function createPieChart(canvas, context, data){
     context.strokeStyle = "#fff";
     context.stroke();
     previous_position = next_position;
+    index++;
   }
 
   return pie_data;
