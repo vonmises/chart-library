@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pie Chart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" >
+  </head>
+  <body onload="createChart();">
+    <button type="button" class="btn btn-info btn-lg"
+      data-toggle="modal" data-target="#pieModal">Pie Chart
+    </button>
+    <button type="button" class="btn btn-info btn-lg"
+      data-toggle="modal" data-target="#barModal">Bar Chart
+    </button>
+
+    <!-- Modal Pie Chart-->
+    <div class="modal fade" id="pieModal" role="dialog">
+      <div class="modal-dialog modal-lg" >
+        <!-- Modal Pie Content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Pie Chart</h4>
+          </div>
+          <div class="modal-body">
+            <div class="slice_value">Values</div>
+            <canvas id="canvas" width="400" height="300"></canvas>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Bar Chart-->
+    <div class="modal fade" id="barModal" role="dialog">
+      <div class="modal-dialog modal-lg">    
+        <!-- Modal Bar Content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Bar Chart</h4>
+          </div>
+          <div class="modal-body">
+            <canvas id="bar" width="0" height="0"></canvas>
+          </div>
+          <div>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <script src="js/jquery2.1.4-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pie-chart.js" ></script>
+    <script src="js/pie-demo.js" > </script>
+    <script src="js/bar-chart.js"></script>
+    <script src="js/bar-demo.js"></script>
+  </body>
+</html>
