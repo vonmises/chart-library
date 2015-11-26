@@ -26,6 +26,7 @@ canvas {
 
 .fa {
   color: white;
+  margin-top: 20px;
 }
 
 .col-md-4 {
@@ -37,6 +38,10 @@ canvas {
   color: #fff;
   text-shadow: 2px 1px #000;
   font-family: 'Roboto', sans-serif;
+}
+
+.container button {
+  margin-top: 30px;
 }
 
 .btn:hover, .btn:focus, .btn-custom {
