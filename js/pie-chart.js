@@ -5,11 +5,12 @@ function createPieChart(canvas, context, data){
   var previous_position = 0, next_position = 0, total = 0;
   // numerical index for data[] and colours[], string i for pie_data[]
   var index = 0;
+  var pie_data = [];
+  var keys;
 
   for (var i in data) { total += data[i]; }
 
-  var pie_data = [];
-  var keys = Object.keys(data);
+  keys = Object.keys(data);
 
   for (var i in data) {
     pie_data[i] = [];
@@ -35,7 +36,7 @@ function createPieChart(canvas, context, data){
     context.lineTo(center[0], center[1]);
     context.fillStyle = colours[index];
     context.fill();
-    context.lineWidth = 1;
+    context.lineWidth = 3;
     context.strokeStyle = "#fff";
     context.stroke();
     previous_position = next_position;
