@@ -3,6 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #282828;
+  color: #fff;
 }
 
 canvas {
@@ -10,23 +11,30 @@ canvas {
   display: block;
 }
 
+h4 {
+  color: #000;
+}
+
 .jumbotron {
-  font-weight: 100;
   background-color: #282828;
   border: 1px solid #e44c65;
-  color: #fff;
 }
 
 .slice_value {
   width: 120px;
   border: 5px solid #e44c65;
   background-color: #282828;
-  color: #fff;
+  font-weight: 700;
 }
 
 .fa {
   color: white;
   margin-top: 20px;
+}
+
+.fa-pie-chart:hover, .fa-bar-chart:hover, .fa-line-chart:hover {
+  transform: scale(1.6);
+  cursor: pointer;
 }
 
 .col-md-4 {
@@ -35,9 +43,8 @@ canvas {
 
 .btn {
   background-color: #e44c65;
-  color: #fff;
   text-shadow: 2px 1px #000;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .container button {
@@ -52,4 +59,13 @@ canvas {
 
 .btn-custom {
   border-color: cyan;
+}
+
+.fa-github, .fa-github:hover, .fa-github:focus { 
+  color: #e44c65;
+  text-decoration: none;
+}
+
+.github {
+  margin-top: 50px;
 }
