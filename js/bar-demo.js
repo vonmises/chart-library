@@ -1,7 +1,7 @@
 (function () {
   var random = Math.random;
 
-  var context = document.getElementById("bar").getContext("2d");
+  var context = document.getElementById("bar_chart").getContext("2d");
 
   var graph = new BarChart(context);
   graph.width = 800;
@@ -13,5 +13,5 @@
   "October", "November", "December"];
   graph.update([random() * 30, random() * 30, random() * 30, random() * 30,
   random() * 30, random() * 30, random() * 30, random() * 30,
-  random() * 30, random() * 30, random() * 30, random() * 30,]);
+  random() * 30, random() * 30, random() * 30, random() * 30]);
 }());
