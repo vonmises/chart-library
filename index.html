@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pie Chart</title>
+    <title>ProtoChart - A Simple Charting Library</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,700italic' >
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css" >
   </head>
   <body>
-    <button type="button" class="btn btn-info btn-lg"
-      data-toggle="modal" data-target="#pieModal">Pie Chart
-    </button>
-    <button type="button" class="btn btn-info btn-lg"
-      data-toggle="modal" data-target="#barModal">Bar Chart
-    </button>
-    <button type="button" class="btn btn-info btn-lg"
-      data-toggle="modal" data-target="#lineModal">Line Chart
-    </button>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>ProtoChart</h1> 
+        <p>
+        ProtoChart is a simple chart library for developers who need basic charts
+        </p> 
+      </div>
+    </div>
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fa fa-pie-chart fa-5x"></i>
+        </div>
+        <div class="col-md-4" >
+          <i class="fa fa-bar-chart fa-5x"></i>
+        </div>
+        <div class="col-md-4" >
+          <i class="fa fa-line-chart fa-5x"></i>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-4" >
+          <button type="button" class="btn btn-lg center-block"
+            data-toggle="modal" data-target="#pieModal">Pie Chart
+          </button>
+        </div>
+        <div class="col-md-4" >
+          <button type="button" class="btn btn-lg center-block"
+            data-toggle="modal" data-target="#barModal">Bar Chart
+          </button>
+        </div>
+        <div class="col-md-4" >
+          <button type="button" class="btn btn-lg center-block"
+            data-toggle="modal" data-target="#lineModal">Line Chart
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal Pie Chart-->
     <div class="modal fade" id="pieModal" role="dialog">
@@ -31,7 +62,7 @@
             <canvas id="canvas" width="400" height="300"></canvas>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -50,7 +81,7 @@
             <canvas id="bar_chart" width="0" height="0"></canvas>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
           </div>
         </div>      
       </div>
@@ -69,7 +100,7 @@
             <canvas id="line" width="800" height="400"></canvas>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
           </div>
         </div>      
       </div>
