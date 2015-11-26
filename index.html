@@ -20,19 +20,25 @@
     <div class="container" >
       <div class="row">
         <div class="col-md-4">
-          <i class="fa fa-pie-chart fa-5x"></i>
+          <a data-toggle="modal" data-target="#pieModal">
+            <i class="fa fa-pie-chart fa-5x"></i>
+          </a>
           <button type="button" class="btn btn-lg center-block col-md-12"
             data-toggle="modal" data-target="#pieModal">Pie Chart
           </button>
         </div>
         <div class="col-md-4" >
-          <i class="fa fa-bar-chart fa-5x"></i>
+          <a data-toggle="modal" data-target="#barModal">
+            <i class="fa fa-bar-chart fa-5x"></i>
+          </a>
           <button type="button" class="btn btn-lg center-block col-md-12"
             data-toggle="modal" data-target="#barModal">Bar Chart
           </button>
         </div>
         <div class="col-md-4" >
-          <i class="fa fa-line-chart fa-5x"></i>
+          <a data-toggle="modal" data-target="#lineModal">
+            <i class="fa fa-line-chart fa-5x"></i>
+          </a>
           <button type="button" class="btn btn-lg center-block col-md-12"
             data-toggle="modal" data-target="#lineModal">Line Chart
           </button>
@@ -51,7 +57,7 @@
           </div>
           <div class="modal-body">
             <div class="slice_value text-center">Values</div>
-            <canvas id="canvas" width="400" height="300"></canvas>
+            <canvas id="canvas" width="800" height="600"></canvas>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
@@ -70,7 +76,7 @@
             <h4 class="modal-title">Bar Chart</h4>
           </div>
           <div class="modal-body">            
-            <canvas id="bar_chart" width="0" height="0"></canvas>
+            <canvas id="bar_chart" width="800" height="600"></canvas>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
@@ -89,7 +95,7 @@
             <h4 class="modal-title">Line Chart</h4>
           </div>
           <div class="modal-body">
-            <canvas id="line" width="800" height="400"></canvas>
+            <canvas id="line_chart" width="800" height="600"></canvas>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
@@ -98,11 +104,19 @@
       </div>
     </div>
 
+    <div class="col-md-4 col-md-offset-4 github">
+      <a class="center-block fa fa-github fa-5x"
+         href="https://github.com/vonmises/chart-library"></a>
+      <p>github</p>
+    </div>
+
     <script src="js/jquery2.1.4-min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/pie-chart.js" ></script>
     <script src="js/pie-demo.js" > </script>
     <script src="js/bar-chart.js"></script>
     <script src="js/bar-demo.js"></script>
+    <script src="js/line-chart.js"></script>
+    <script src="js/line-demo.js"></script>
   </body>
 </html>
