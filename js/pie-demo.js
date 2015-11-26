@@ -26,7 +26,7 @@
         if (angle >= pie_data[slice]["start_angle"] &&
             angle <= pie_data[slice]["end_angle"]) {
             var slice_value = $("div.slice_value");
-            slice_value.text(pie_data[slice]["city"] + ": " +
+            slice_value.text(pie_data[slice]["key"] + ": " +
                              pie_data[slice]["value"]);
             slice_value.css("border-color", pie_data[slice]["colour"]);
             return;

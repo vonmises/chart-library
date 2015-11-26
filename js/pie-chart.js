@@ -9,13 +9,13 @@ function createPieChart(canvas, context, data){
   for (var i in data) { total += data[i]; }
 
   var pie_data = [];
-  var cities = Object.keys(data);
+  var keys = Object.keys(data);
 
   for (var i in data) {
     pie_data[i] = [];
-    pie_data[i]["city"] = cities[index];
+    pie_data[i]["key"] = keys[index]; // keys of original data source
     pie_data[i]["colour"] = colours[index];
-    pie_data[i]["value"] = data[i];
+    pie_data[i]["value"] = data[i]; // values of original data source
     pie_data[i]["start_angle"] = 2 * Math.PI * previous_position;
     pie_data[i]["end_angle"] = 2 * Math.PI * (
     previous_position + (data[i] / total));
