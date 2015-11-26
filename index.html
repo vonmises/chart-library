@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" >
   </head>
-  <body onload="createChart();">
+  <body>
     <button type="button" class="btn btn-info btn-lg"
       data-toggle="modal" data-target="#pieModal">Pie Chart
     </button>
     <button type="button" class="btn btn-info btn-lg"
       data-toggle="modal" data-target="#barModal">Bar Chart
+    </button>
+    <button type="button" class="btn btn-info btn-lg"
+      data-toggle="modal" data-target="#lineModal">Line Chart
     </button>
 
     <!-- Modal Pie Chart-->
@@ -28,7 +31,7 @@
             <canvas id="canvas" width="400" height="300"></canvas>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -43,11 +46,30 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Bar Chart</h4>
           </div>
-          <div class="modal-body">
-            <canvas id="bar" width="0" height="0"></canvas>
+          <div class="modal-body">            
+            <canvas id="bar_chart" width="0" height="0"></canvas>
           </div>
-          <div>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Modal Line Chart-->
+    <div class="modal fade" id="lineModal" role="dialog">
+      <div class="modal-dialog modal-lg">    
+        <!-- Content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Line Chart</h4>
+          </div>
+          <div class="modal-body">
+            <canvas id="line_chart" width="0" height="0"></canvas>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
           </div>
         </div>      
       </div>
